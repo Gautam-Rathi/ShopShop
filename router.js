@@ -125,8 +125,8 @@ router.post("/login", async (req, res) => {
                 res.cookie("Shopshop",token,{
                     expires:new Date(Date.now() + 9000000),
                     httpOnly:true,
-                    // sameSite: 'None',
-                    // secure:true
+                    sameSite: 'None',
+                    secure:true
 
                     
                 })
