@@ -66,6 +66,7 @@ router.post("/register", async (req, res) => {
         }
 
         else {
+            console.log(req.body)
             const finalUser = new User({
                 fname, email, mobile, password, cpassword
             });
