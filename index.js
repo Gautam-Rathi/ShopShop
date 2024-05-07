@@ -10,7 +10,10 @@ const stripe = require("stripe")(process.env.STRIPE_KEY)
 const DB = process.env.DATABASE;
 
 mongoose.connect(DB).then(()=>
-    {}
+    {
+        console.log("database connectedd")
+
+    }
 ).catch((error)=> 
     {}
 )
