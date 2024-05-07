@@ -41,6 +41,7 @@ router.post("/register", async (req, res) => {
     // console.log(req.body);
 
     const { fname, email, mobile, password, cpassword } = req.body;
+    console.log(req.body)
 
     if (!fname || !email || !mobile || !password || !cpassword) {
         res.status(422).json({ error: "fill the all data" });
