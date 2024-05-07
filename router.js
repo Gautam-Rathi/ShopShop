@@ -76,7 +76,7 @@ router.post("/register", async (req, res) => {
             // password hasing process
 
             const storedata = await finalUser.save();
-            // console.log(storedata);
+            console.log(storedata);
 
             res.status(201).json(storedata);
         }
