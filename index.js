@@ -27,7 +27,7 @@ const cors = require("cors");
 app.use(express.json()); // Use built-in JSON parser
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin:["https://shop-shop-web.netlify.app/"],
+    origin:["https://shop-shop-web.netlify.app"],
     methods:["GET","POST","DELETE"],
     credentials:true
 }));
