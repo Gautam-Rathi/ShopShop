@@ -297,8 +297,8 @@ router.post("/checkout",athenticate,async (req,res)=>{
         customer:customer.id,
         line_items:data_buy,
         mode:"payment",
-        success_url:`${process.env.BASE_URL}/success`,
-        cancel_url:`${process.env.BASE_URL}/cancel`
+        success_url:`${process.env.BASE_URL}`,
+        cancel_url:`${process.env.BASE_URL}`
 
     })
     res.status(201).json({id:session.id})
